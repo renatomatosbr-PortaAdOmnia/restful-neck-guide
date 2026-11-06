@@ -12,7 +12,7 @@ Static site, no build step. Served by GitHub Pages.
 - [x] Product photos: hotlinked from the manufacturer creatives folder (Drive thumbnails). Self-host later if Drive starts blocking.
 - [x] Contact e-mail set to farmdehype@gmail.com
 - [ ] Point the custom domain (no brand name in it) and add a `CNAME` file
-- [ ] Paste the Google Ads tag in `<head>` of `index.html`
+- [x] Google Ads tag AW-18559777099 + conversion "Clique na oferta" on every offer button
 
 ## Vendor rules (breaking them = suspension, no payout)
 - No brand bidding (no "Derila" keywords, incl. Performance Max)

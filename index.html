@@ -9,7 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=3">
-<!-- GOOGLE ADS TAG: paste the gtag.js snippet here (Step 5) -->
+<!-- Google tag (gtag.js) - Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18559777099"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18559777099');
+</script>
 </head>
 <body>
 
@@ -173,6 +180,14 @@
     });
   }catch(e){}
 })();
+/* Google Ads conversion: "Clique na oferta" fires when a visitor clicks through to the offer. */
+document.querySelectorAll('a[href*="hop.clickbank.net"]').forEach(function(a){
+  a.addEventListener('click',function(){
+    if(typeof gtag==='function'){
+      gtag('event','conversion',{'send_to':'AW-18559777099/0f0_CPPCoLMdEMvy_pFF','transport_type':'beacon'});
+    }
+  });
+});
 </script>
 
 <footer class="site">
