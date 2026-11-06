@@ -10,7 +10,7 @@ Static site, no build step. Served by GitHub Pages.
 ## Before running ads
 - [ ] Derila approval received (affiliate link only pays after approval)
 - [x] Product photos: hotlinked from the manufacturer creatives folder (Drive thumbnails). Self-host later if Drive starts blocking.
-- [ ] Replace `contact@restfulneckguide.com` in `contact.html` with a real inbox
+- [x] Contact e-mail set to farmdehype@gmail.com
 - [ ] Point the custom domain (no brand name in it) and add a `CNAME` file
 - [ ] Paste the Google Ads tag in `<head>` of `index.html`
 
