@@ -25,7 +25,8 @@ header.site{background:rgba(251,247,241,.92);backdrop-filter:blur(6px);position:
 header.site .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px}
 .logo{font-family:"Nunito",sans-serif;font-weight:800;font-size:20px;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px}
 .logo .dot{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff 0 18%,var(--sky) 19% 100%)}
-.logo span{color:var(--sky-deep)}
+.logo .name span{color:var(--sky-deep)}
+nav{white-space:nowrap}
 nav a{font-size:14px;margin-left:18px;color:var(--muted);text-decoration:none}
 nav a:hover{color:var(--ink)}
 
@@ -112,4 +113,7 @@ footer.site p{margin:0 0 10px}
   .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.96);border-top:1px solid var(--line);padding:10px 14px;box-shadow:0 -6px 20px rgba(0,0,0,.06)}
   .sticky .btn{font-size:17px;padding:14px 20px}
   nav a{margin-left:12px}
+  nav a.hide-m{display:none}
+  .logo{font-size:18px}
+  .topbar{font-size:11.5px;padding:6px 10px}
 }
