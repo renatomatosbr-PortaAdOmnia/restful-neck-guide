@@ -160,6 +160,21 @@
 
 <div class="sticky"><a class="btn block" href="https://hop.clickbank.net/?affiliate=adomnia&amp;vendor=DERILAERGO" rel="sponsored nofollow noopener" target="_blank">Check today's price →</a></div>
 
+<script>
+/* Passes the Google Ads keyword (?kw=) to ClickBank as a tracking id (tid), so each sale shows which keyword produced it. */
+(function(){
+  try{
+    var p=new URLSearchParams(location.search);
+    var raw=(p.get('kw')||'')+(p.get('mt')?'-'+p.get('mt'):'');
+    var tid=raw.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,24);
+    if(!tid) return;
+    document.querySelectorAll('a[href*="hop.clickbank.net"]').forEach(function(a){
+      var u=new URL(a.href); u.searchParams.set('tid',tid); a.href=u.toString();
+    });
+  }catch(e){}
+})();
+</script>
+
 <footer class="site">
   <div class="wrap">
     <p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="contact.html">Contact</a></p>
